@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: unset;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body, ul{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 40px;
+ 
+}
+
+u {
+    text-decoration: underline;
+}
+section {
+    margin-top: 48px;
+}
+/* general styles*/
+
+.font-w-500 {
+    font-weight: 500;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-column {
+    flex-direction: column;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50-lg {
+    width: 50%;
+}
+
+.cta_arrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 32px auto;
+    padding: 24px;
+}
+
+.logo {
+    width: 64px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar li {
+    padding: 8px; 
+}
+
+/*Menú desplegable dropd-menu*/
+
+.skills {
+    position: relative;
+}
+
+.dropd-menu {
+    position: absolute; 
+    display: none;
+    top: 35px;
+    border-top: 1px solid darkgray;
+    background-color: white;
+    padding-left: 8px;
+    
+    
+}
+
+.dropd-menu li {
+    padding: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 40px;
+    text-align: left;
+
+}
+
+.skills:hover .dropd-menu {
+    display: block;
+    
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+   
+}
+
+.intro-title {
+    display: flex;
+    font-size: 24px;
+    font-weight:300;
+}
+
+.intro-text {
+    font-size: 20px;
+    color: grey;
+    margin-top: 16px;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgb(160, 158, 158);
+}
+
+
+.card-proyecto {
+    margin-top: 40px;
+}
+
+.h-card {
+    border: 1px solid #ebe2e2;
+    border-radius: 10px;
+    height: 36vh;
+    align-items: center;
+    padding: 40px;
+    gap: 16px;
+}
+
+
+.card-text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #8f8d8d;
+}
+
+.v-card_container {
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+
+.card-proyecto_vertical {
+    width: calc(50% - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    border-radius: 10px;
+    border: 1px solid #ebe2e2;
+    padding: 40px;
+    
+}
+
+.card-logo {
+    width: 50%;
+}
+
+.party-card {
+    background: #F0DBDB;
+    box-shadow: 5px 5px #DBA39A;
+
+}
+.create-card {
+    background-color: #f5ebe0;
+    box-shadow: 5px 5px #e7d9ca;
+}
+
+.sklum-card {
+    background-color: #f7d6e0;
+    box-shadow: 5px 5px #fbb2d4;
+}
+
+.dadelos-card {
+    background-color: #e9edc9; 
+    box-shadow: 5px 5px #ccd5ae;
+   
+}
+
+.sobremi-section__info {
+    margin-top: 40px;
+}
+
+.sobremi-section_title {
+    font-size: 20px;
+    color: grey;
+    padding-bottom: 8px;
+}
+
+.sobremi-section_cv {
+    margin-bottom: 16px;
+}
+
+.sobremi-section__year {
+    color: #8f8d8d;
+    font-size: 14px;
+   
+}
+
+.sobremi-section_location  {
+    display: flex;
+    gap: 8px;
+}
+
+.sobremi-section_location + p {
+    font-weight: 900;
+}
+
+.sobremi-section__text  {
+    text-align: justify;
+}
+
+
+.sobremi-section__text > p {
+    padding-bottom: 8px;
+    
+}
+
+.contacto-section {
+    justify-content: space-between;
+    gap: 16px;
+}
+
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+.contacto-section__title {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.divider__footer {
+    justify-content: space-between;
+    border-top: 0.5px solid rgb(160, 158, 158);
+}
+
+input {
+    padding: 8px;
+    border: 0.5px solid;
+}
+
+input:focus {
+    outline: 1px solid rgb(160, 158, 158);
+}
+
+.btn {
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 8px;
+    border: none;
+}
+
+.logo_footer {
+    width: 32px;
+}
+
+.skills__logo {
+    width: 32px;
+}
+
+footer {
+    align-items: baseline;
+}
+
+.footer__info > div {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills__section {
+    margin-top: 40px;
+    
+}
+
+.skills__container {
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.skills__card {
+    border:  1px solid #e1e1e1;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.skills__card > p {
+    padding-bottom: 16px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .header, .navbar{
+        flex-direction: column;
+        gap: 16px;
+        align-items: inherit;
+        position: unset;
+    }    
+    .dropd-menu {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+        top: 8px;
+    }
+ 
+    .intro-section,  .v-card_container, .contacto-section, footer {
+        flex-direction: column;
+    }
+
+    .w-50-lg {
+        width: 100%;
+    }
+
+    .d-column-md {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .card-proyecto_vertical {
+        width: 100%;
+    }
+
+    .sklum-card {
+        margin-bottom: 40px;
+    }
+
+    .skills__container{
+        overflow-x: scroll;
+    }
+    .skills__card-logo {
+        display: flex;
+    }
+    
+    .skills__card {
+        padding: 40px;
+    }
+
+    .footer__info {
+        margin-top: 40px;
+    }
+}
