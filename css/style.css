@@ -143,7 +143,7 @@ section {
 .h-card {
     border: 1px solid #ebe2e2;
     border-radius: 10px;
-    height: 36vh;
+    height: 32vh;
     align-items: center;
     padding: 40px;
     gap: 16px;
@@ -261,13 +261,19 @@ section {
     border-top: 0.5px solid rgb(160, 158, 158);
 }
 
-input {
+input, select  {
     padding: 8px;
     border: 0.5px solid;
 }
 
-input:focus {
+input:focus, select:focus, textarea:focus {
     outline: 1px solid rgb(160, 158, 158);
+}
+
+textarea {
+    resize: none;
+    height: 16vh;
+    padding: 8px;
 }
 
 .btn {
@@ -278,6 +284,12 @@ input:focus {
     margin-top: 16px;
     padding: 8px;
     border: none;
+    cursor: pointer;
+   
+}
+
+.btn:hover{
+    background-color: rgb(160, 158, 158);
 }
 
 .logo_footer {
@@ -321,23 +333,20 @@ footer {
 }
 
 
+input[type=checkbox], .ham-menu {
+    display: none;
+} 
+
+
 @media screen and (max-width: 600px) {
 
     .header, .navbar{
-        flex-direction: column;
-        gap: 16px;
-        align-items: inherit;
+       display: block;
         position: unset;
-    }    
-    .dropd-menu {
-        position: relative;
-        display: block;
-        width: 100%;
-        text-align: left;
-        top: 8px;
-    }
+    } 
+
  
-    .intro-section,  .v-card_container, .contacto-section, footer {
+    .intro-section,  .v-card_container, .contacto-section, footer, .sobremi-section_location {
         flex-direction: column;
     }
 
@@ -355,6 +364,12 @@ footer {
 
     .card-proyecto_vertical {
         width: 100%;
+    }
+
+    .h-card {
+        height: 40vh;
+        justify-content: space-between
+        ;
     }
 
     .sklum-card {
@@ -375,4 +390,33 @@ footer {
     .footer__info {
         margin-top: 40px;
     }
+
+    .dropd-menu {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+        top: 8px;
+    }
+
+    .navbar {
+        display: none;
+        position: relative;
+        left: -10px;
+        top: 24px;
+    }
+
+    input[type=checkbox]:checked ~ .navbar {
+        display: block;
+    }
+        
+    .ham-menu {
+    display: block;
+    }
+        
+    .navbar__logo {
+        float: right;
+    }
+    
+        
 }
