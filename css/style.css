@@ -412,6 +412,7 @@ input[type=checkbox], .ham-menu {
         
     .ham-menu {
     display: block;
+    margin-top: 20px;
     }
         
     .navbar__logo {
